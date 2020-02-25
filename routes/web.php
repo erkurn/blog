@@ -10,3 +10,6 @@ Route::prefix('blog')->group(function () {
     Route::get('tag/{slug}', 'BlogController@getPostsByTag')->name('blog.tag');
     Route::get('topic/{slug}', 'BlogController@getPostsByTopic')->name('blog.topic');
 });
+
+Route::get('/sitemap', 'SitemapController@index');
+Route::get('/sitemap/posts', 'SitemapController@posts');
