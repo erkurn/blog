@@ -1,6 +1,6 @@
 <?php
 
-Route::feeds();
+//Route::feeds();
 Auth::routes(['register' => false]);
 
 Route::redirect('/', 'blog');
