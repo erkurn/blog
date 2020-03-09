@@ -16,3 +16,4 @@ Route::get('/sitemap', 'SitemapController@index');
 Route::get('/sitemap/posts', 'SitemapController@posts');
 
 Route::post('/moota/handler', 'MootaController');
+Route::post('/moota/push/handler', 'MootaPushController');
