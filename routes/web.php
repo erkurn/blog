@@ -1,5 +1,6 @@
 <?php
 
+Route::feeds();
 Auth::routes(['register' => false]);
 
 Route::redirect('/', 'blog');
@@ -13,3 +14,5 @@ Route::prefix('blog')->group(function () {
 
 Route::get('/sitemap', 'SitemapController@index');
 Route::get('/sitemap/posts', 'SitemapController@posts');
+
+Route::post('/moota/handler', 'MootaController');
